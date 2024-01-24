@@ -16,9 +16,7 @@
   --onyx: hsl(0, 0%, 25%);
   --jet: hsl(0, 0%, 20%);
 
-  /**
-   * typography
-   */
+ 
 
   --ff-poppins: "Poppins", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
@@ -124,6 +122,17 @@ body { background: var(--white); }
   transition: var(--transition);
 }
 
+.btn-primary1 {
+  background: var(--bright-navy-blue);
+  border-color: var(--bright-navy-blue);
+  opacity: 0;
+}
+
+.btn-primary:is(:hover, :focus) {
+  background: var(--yale-blue);
+  border-color: var(--yale-blue);
+  opacity: 0;
+}
 .btn-primary {
   background: var(--bright-navy-blue);
   border-color: var(--bright-navy-blue);
@@ -148,7 +157,7 @@ body { background: var(--white); }
 
 .h1 {
   color: var(--white);
-  font-size: var(--fs-1);
+  font-size: 40px;
 }
 
 .h2,
@@ -234,7 +243,8 @@ body { background: var(--white); }
 
 .header-top .logo { margin-inline: auto; }
 
-.header-top .logo img { max-width: auto; }
+.header-top .logo img { max-width: auto;
+ }
 
 .header-btn-group {
   justify-self: flex-end;
@@ -258,7 +268,7 @@ body { background: var(--white); }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 15px;
+  padding-block: 30px;
 }
 
 .social-list {
@@ -308,7 +318,10 @@ body { background: var(--white); }
   padding: 40px 15px;
 }
 
-.navbar-top .logo img { width: 150px; }
+.navbar-top .logo img {
+   width: 150px; 
+   
+  }
 
 .nav-close-btn {
   font-size: 20px;
@@ -848,6 +861,15 @@ address {
   .container {
     max-width: 580px;
     margin-inline: auto;
+    
+  }
+
+  .header-top .container{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-start;
+    align-items: center;
+}
   }
 
   .btn {
@@ -930,7 +952,7 @@ address {
 
   .footer-bottom-list { justify-content: flex-end; }
 
-}
+
 
 
 
