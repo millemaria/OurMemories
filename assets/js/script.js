@@ -44,3 +44,12 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+$(document).ready(function(){
+  $('.slider').slick({
+      autoplay: true,  // Autoplay do slider
+      autoplaySpeed: 2000,  // Velocidade do autoplay em milissegundos
+      arrows: false,  // Desativa as setas de navegação
+      dots: true  // Ativa os pontos de navegação
+  });
+});
